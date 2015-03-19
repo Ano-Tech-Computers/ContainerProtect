@@ -166,6 +166,14 @@ public class ContainerProtect extends JavaPlugin implements Listener {
     		event.setCancelled(true); // Lava bucket
     		logger.info("[CP] BlockDispenseEvent blocked: "+event.getItem().getType()+" at x="+event.getBlock().getX()+" y="+event.getBlock().getY()+" z="+event.getBlock().getZ());
     	}
+    	if (event.getItem().getTypeId() == 259) {
+    		event.setCancelled(true); // Flint and Steel
+    		logger.info("[CP] BlockDispenseEvent blocked: "+event.getItem().getType()+" at x="+event.getBlock().getX()+" y="+event.getBlock().getY()+" z="+event.getBlock().getZ());
+    	}
+    	if (event.getItem().getTypeId() == 385) {
+    		event.setCancelled(true); // Fire Charge
+    		logger.info("[CP] BlockDispenseEvent blocked: "+event.getItem().getType()+" at x="+event.getBlock().getX()+" y="+event.getBlock().getY()+" z="+event.getBlock().getZ());
+    	}
     }
     
     @EventHandler
