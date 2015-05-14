@@ -1,11 +1,11 @@
-name: ContainerProtect
+name: "${project.name}"
 main: no.atc.floyd.bukkit.cp.ContainerProtect
-version: 1.21
-website: http://minecraft.atc.no/plugins
+version: "${project.version}"
+website: "${project.url}"
 author: FloydATC
 depend: [BanPlugin]
-description: >
-             Chest, furnace and dispenser protection
+description: "${project.description}"
+
 commands:
   cp:
     description: Set protection mode 1=public, 2=private, 3=player, 4=group
